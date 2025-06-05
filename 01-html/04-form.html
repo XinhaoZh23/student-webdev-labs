@@ -1,15 +1,53 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Exercise 04 - Form</title>
+    <style>
+      .placeholder-line {
+        display: inline-block;
+        color: #333;
+        font-size: 0.95em;
+        border-bottom: 1px solid #ccc;
+        min-width: 160px;
+        padding-bottom: 2px;
+        margin-left: 4px;
+      }
+    </style>
   </head>
   <body>
+    <h1>Form Exercise</h1>
     <main>
       <form action="/submit">
-        <!-- Add your code here -->
+        <p>Name: <span class="placeholder-line">Full Name</span></p>
+        <p>Email: <span class="placeholder-line">name@pdx.edu</span></p>
+
+        <fieldset style="max-width: 350px; margin-bottom: 10px">
+          <legend>Favorite Character:</legend>
+          <input
+            type="radio"
+            id="spongebob"
+            name="character"
+            value="Spongebob"
+          />
+          <label for="spongebob">Spongebob</label><br />
+          <input type="radio" id="sandy" name="character" value="Sandy" />
+          <label for="sandy">Sandy</label><br />
+          <input type="radio" id="patrick" name="character" value="Patrick" />
+          <label for="patrick">Patrick</label>
+        </fieldset>
+        <fieldset style="max-width: 350px; margin-bottom: 10px">
+          <legend>Are you a fan of the show?</legend>
+          <input type="checkbox" id="watched" name="fan" value="watched" />
+          <label for="watched">Yes, I have watched all episodes!</label><br />
+          <input type="checkbox" id="memes" name="fan" value="memes" />
+          <label for="memes">Yes, it's got the best memes.</label>
+        </fieldset>
+        <br />
+        <input type="submit" value="Submit" />
+        <input type="reset" value="Reset" />
       </form>
     </main>
   </body>

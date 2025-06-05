@@ -1,26 +1,82 @@
 :root {
   --darkviolet: #9400d3;
+  --purple: #80009c;
   --maroon: #800000;
-  --darkgolden: #8f6805;
+  --darkgolden: #b38a00;
+  --white: #fff;
+}
+
+body {
+  margin: 8px;
+}
+
+.main {
+  width: 100%;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2%;
+  margin-top: 20px;
 }
 
 .box {
-  padding: 10px;
+  padding: 20px;
   color: var(--white);
+  font-size: 2.5em;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+.static,
+.relative {
+  width: 48%;
+  min-width: 200px;
+  height: 400px;
+  font-size: 2em;
 }
 
 .static {
-  background-color: var(--darkviolet);
+  background-color: #a000e6;
 }
 
 .relative {
-  background-color: var(--purple);
+  background-color: #880088;
 }
 
 .absolute {
-  background-color: var(--maroon);
+  background-color: #800000;
+  width: 100%;
+  position: static;
+  font-size: 2em;
+  margin-bottom: 20px;
+  padding-top: 18px;
+  padding-bottom: 18px;
 }
 
 .fixed {
-  background-color: var(--darkgolden);
+  background-color: #b38a00;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 3;
+  font-size: 2em;
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+@media (max-width: 900px) {
+  .flex-row {
+    flex-direction: column;
+    gap: 0;
+  }
+  .static,
+  .relative {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 20px;
+  }
 }

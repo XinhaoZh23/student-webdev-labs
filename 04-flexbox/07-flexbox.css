@@ -3,21 +3,242 @@
 }
 
 /* Flex Container 1 */
+.flex-container-1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin: 24px 0;
+  max-width: 440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.flex-container-1 .flex-item {
+  background: purple;
+  color: #fff;
+  font-size: 2.5em;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+.flex-container-1 .flex-item:nth-child(6) {
+  margin-left: 0px;
+}
+.flex-container-1 .flex-item.placeholder {
+  background: transparent;
+  box-shadow: none;
+  pointer-events: none;
+}
 
 /* Flex Container 2 */
+.flex-container-2 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 16px;
+  max-width: 440px;
+  margin: 24px auto;
+}
+.flex-container-2 .flex-item {
+  background: purple;
+  color: #fff;
+  font-size: 2.5em;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+.flex-container-2 .flex-item:nth-child(6) {
+  margin-right: 0px;
+}
 
 /* Flex Container 3 */
-
-/* use height: 400px; on the container */
+.flex-container-3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 80px;
+  margin: 24px auto;
+}
+.flex-container-3 .column {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.flex-container-3 .flex-item {
+  background: purple;
+  color: #fff;
+  font-size: 2.5em;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
 
 /* Flex Container 4 */
+.flex-container-4 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 440px;
+  margin: 24px auto;
+  height: 170px;
+  position: relative;
+}
+.flex-container-4 .flex-item {
+  background: purple;
+  color: #fff;
+  font-size: 2.5em;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+.flex-container-4 .flex-item:nth-child(6) {
+  position: absolute;
+  top: 0;
+  left: 70px;
+}
+.flex-container-4 .flex-item:nth-child(7) {
+  position: absolute;
+  top: 0;
+  left: 185px;
+}
+.flex-container-4 .flex-item:nth-child(8) {
+  position: absolute;
+  top: 0;
+  left: 300px;
+}
+.flex-container-4 .flex-item:nth-child(-n + 5) {
+  position: absolute;
+  top: 80px;
+}
+.flex-container-4 .flex-item:nth-child(1) {
+  left: 20px;
+}
+.flex-container-4 .flex-item:nth-child(2) {
+  left: 105px;
+}
+.flex-container-4 .flex-item:nth-child(3) {
+  left: 190px;
+}
+.flex-container-4 .flex-item:nth-child(4) {
+  left: 275px;
+}
+.flex-container-4 .flex-item:nth-child(5) {
+  left: 360px;
+}
 
 /* Flex Container 5 */
+.flex-container-5 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin: 24px auto;
+}
+.flex-container-5 .flex-item {
+  background: purple;
+  color: #fff;
+  font-size: 1.8em;
+  width: 55px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  border-radius: 4px;
+  padding-top: 4px;
+}
+.flex-container-5 .item1 {
+  height: 90px;
+}
+.flex-container-5 .item2 {
+  height: 100px;
+}
+.flex-container-5 .item3 {
+  height: 80px;
+}
+.flex-container-5 .item4 {
+  height: 60px;
+}
+.flex-container-5 .item5 {
+  height: 60px;
+}
+.flex-container-5 .item6 {
+  height: 80px;
+}
+.flex-container-5 .item7 {
+  height: 60px;
+}
+.flex-container-5 .item8 {
+  height: 100px;
+}
 
 /* Flex Container 6 */
-
+.flex-container-6 {
+  display: grid;
+  grid-template-columns: repeat(3, 90px);
+  grid-template-rows: repeat(3, 50px);
+  gap: 16px;
+  justify-content: center;
+  align-content: center;
+  margin: 24px auto;
+  min-height: 180px;
+}
 .flex-container-6 .flex-item {
-  width: 400px;
+  background: purple;
+  color: #fff;
+  font-size: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+.flex-container-6 .item1 {
+  grid-column: 1;
+  grid-row: 1;
+}
+.flex-container-6 .item2 {
+  grid-column: 1;
+  grid-row: 2;
+}
+.flex-container-6 .item3 {
+  grid-column: 1;
+  grid-row: 3;
+}
+.flex-container-6 .item4 {
+  grid-column: 2;
+  grid-row: 1;
+}
+.flex-container-6 .item5 {
+  grid-column: 2;
+  grid-row: 2;
+}
+.flex-container-6 .item6 {
+  grid-column: 2;
+  grid-row: 3;
+}
+.flex-container-6 .item7 {
+  grid-column: 3;
+  grid-row: 1;
+}
+.flex-container-6 .item8 {
+  grid-column: 3;
+  grid-row: 2;
 }
 
 /* use height: 300px; on the container */
