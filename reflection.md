@@ -36,6 +36,8 @@ Question 06 initially confused me. At first, I thought I needed to create separa
 
 If there were a real website as a base template for us to modify its styles to achieve responsive adaptation, it would be closer to real development scenarios and would deepen our understanding and practical skills.
 
+## Flexbox
+
 ### 04-flexbox
 
 I completed the exercises independently, without referring to any additional materials.
@@ -44,7 +46,7 @@ This part of the exercises was helpful. The second-to-last exercise, which requi
 
 I found all the instructions in this exercise to be very clear.
 
-### CSS-grid
+## CSS-grid
 
 ### 05-css-grid
 
@@ -55,4 +57,26 @@ This part of the exercise was very helpful. I not only gained a clearer understa
 I found the instructions in this section to be very clear and did not feel that further explanation was needed.
 
 If there could be some exercises comparing Flexbox and CSS Grid, such as implementing the same layout with both methods, it would be even more helpful for understanding their differences and best use cases in practice.
+
+## Bootstrap
+
+### 06-bootstrap
+
+I completed this exercise independently, without referring to any videos or answers.
+
+This part of the exercise was very helpful. At first, I used fixed px values to set the container height, but soon realized that this approach led to unbalanced layouts on different devices due to varying screen size ratios. To solve this, I tried using adaptive layouts to fit different screens, but then encountered the issue where the heading was not included in the layout, causing incomplete display. Eventually, I made all content cells children of the same CSS Grid, distributing space uniformly, which resulted in a much better layout. This process gave me a deeper understanding of responsive design and the practical use of grid systems.
+
+I think the current exercise scenarios are already quite comprehensive and sufficient, and they have helped me master the topics of this week very well.
+
+## JavaScript
+
+### 07-javascript
+
+I completed this exercise independently.
+
+This part of the exercise was very helpful, especially for practicing the use of map, filter, and reduce. Through hands-on practice, I learned how to extract and format data, filter objects based on conditions, and aggregate results, which deepened my understanding of how functional programming in JavaScript can be applied to real-world data processing.
+
+The explanations in this section were clear, and I did not encounter any confusion or problems.
+
+If there could be one or two more exercises that are closer to real business scenarios, such as simulating the processing of complex nested data returned from an API, or combining DOM updates with the output of map/filter/reduce, it would further strengthen the practical application of functional methods in actual development.
 

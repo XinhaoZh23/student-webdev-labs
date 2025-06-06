@@ -1,22 +1,25 @@
 let result = {};
 
 const insertItem = (key, value) => {
-  // insertItem the property with key and value into result
+  // 插入属性
+  result[key] = value;
   return key;
 };
 
 const deleteItem = (key) => {
-  // remove the property with key from result
+  // 删除属性
+  delete result[key];
   return key;
 };
 
 const lookupItem = (key) => {
-  // return the value from result that is associated with key
-  return key;
+  // 查找属性
+  return result.hasOwnProperty(key) ? result[key] : 'Item does not exist';
 };
 
 const printItems = () => {
-  // return a string of the concatenated key in result, separated by commas
+  // 返回所有key，用逗号分隔
+  return Object.keys(result).join(', ');
 };
 
 insertItem('hello', 'world');

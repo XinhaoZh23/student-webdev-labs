@@ -1,10 +1,6 @@
 const formatItems = (input) => {
-  // return a string of the concatenated numbers, separated by commas and with three digits after the decimal point
-
-  // for reference, see the MDN Number page:
-  // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number
-
-  return input;
+  // 将每个数字格式化为三位小数，拼接为字符串
+  return input.map(num => num.toFixed(3)).join(', ');
 };
 
 console.log(formatItems([1, 4, 17, 26, 41]));

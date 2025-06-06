@@ -10,14 +10,175 @@ form > * {
   margin: 1rem;
 }
 
-.row > * {
-  height: 160px;
-  border: 1px solid var(--white);
-  background-color: var(--purple);
-  color: var(--white);
-  font-size: 1.4em;
+/* 移除 row > * 和 .box 的紫色背景和边框，避免影响卡片背景 */
+
+.sr-only {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
 }
 
-.box {
-  height: 160px;
+.bg-purple {
+  background-color: #880088 !important;
+}
+
+.text-white {
+  color: #fff !important;
+}
+
+@media (max-width: 767.98px) {
+  .grid-layout {
+    display: grid !important;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    height: 100vh;
+    max-width: 100vw;
+    padding: 0 !important;
+  }
+  .grid-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #222;
+    background: #fff;
+  }
+  .three-four-row {
+    display: grid !important;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    height: 100%;
+  }
+  .three-four-row > .bg-purple {
+    height: 100% !important;
+    min-height: 0;
+    display: flex;
+    align-items: flex-start;
+    font-size: 2em;
+  }
+  .bg-purple {
+    height: 100% !important;
+    min-height: 0;
+    display: flex;
+    align-items: flex-start;
+    font-size: 2em;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199.98px) {
+  .grid-layout {
+    display: grid !important;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(6, 1fr);
+    height: 80vh;
+    max-width: 100vw;
+    padding: 0 !important;
+    gap: 0;
+  }
+  .grid-title {
+    grid-row: 1 / 2;
+    grid-column: 1 / 7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    font-weight: bold;
+    color: #222;
+    background: #fff;
+  }
+  .grid-layout > .bg-purple:nth-child(2) { /* One */
+    grid-row: 2 / 3;
+    grid-column: 1 / 4;
+  }
+  .grid-layout > .bg-purple:nth-child(3) { /* Two */
+    grid-row: 2 / 3;
+    grid-column: 4 / 7;
+  }
+  .three-four-row {
+    grid-row: 3 / 4;
+    grid-column: 1 / 7;
+    display: grid !important;
+    grid-template-columns: 4fr 2fr;
+    height: 100%;
+  }
+  .three-four-row > .bg-purple:first-child { /* Three */
+    grid-column: 1 / 2;
+  }
+  .three-four-row > .bg-purple:last-child { /* Four */
+    grid-column: 2 / 3;
+  }
+  .grid-layout > .bg-purple:nth-child(5) { /* Five */
+    grid-row: 4 / 5;
+    grid-column: 1 / 3;
+  }
+  .grid-layout > .bg-purple:nth-child(6) { /* Six */
+    grid-row: 4 / 5;
+    grid-column: 3 / 5;
+  }
+  .grid-layout > .bg-purple:nth-child(7) { /* Seven */
+    grid-row: 4 / 5;
+    grid-column: 5 / 7;
+  }
+}
+
+@media (min-width: 1200px) {
+  .grid-layout {
+    display: grid !important;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(5, 1fr);
+    height: 80vh;
+    max-width: 100vw;
+    padding: 0 !important;
+    gap: 0;
+  }
+  .grid-title {
+    grid-row: 1 / 2;
+    grid-column: 1 / 6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    font-weight: bold;
+    color: #222;
+    background: #fff;
+  }
+  .grid-layout > .bg-purple:nth-child(2) { /* One */
+    grid-row: 2 / 3;
+    grid-column: 1 / 4;
+  }
+  .grid-layout > .bg-purple:nth-child(3) { /* Two */
+    grid-row: 2 / 3;
+    grid-column: 4 / 6;
+  }
+  .three-four-row {
+    grid-row: 3 / 4;
+    grid-column: 1 / 6;
+    display: grid !important;
+    grid-template-columns: 3fr 2fr;
+    height: 100%;
+  }
+  .three-four-row > .bg-purple:first-child { /* Three */
+    grid-column: 1 / 2;
+  }
+  .three-four-row > .bg-purple:last-child { /* Four */
+    grid-column: 2 / 3;
+  }
+  .grid-layout > .bg-purple:nth-child(5) { /* Five */
+    grid-row: 4 / 5;
+    grid-column: 1 / 4;
+  }
+  .grid-layout > .bg-purple:nth-child(6) { /* Six */
+    grid-row: 4 / 5;
+    grid-column: 4 / 5;
+  }
+  .grid-layout > .bg-purple:nth-child(7) { /* Seven */
+    grid-row: 4 / 5;
+    grid-column: 5 / 6;
+  }
 }
