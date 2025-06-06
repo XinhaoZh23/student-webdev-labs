@@ -1,6 +1,6 @@
-## Reflection Document
+# Reflection Document
 
-### HTML
+## HTML
 
 ### 01-html
 
@@ -12,7 +12,7 @@ In 04-table, I mistakenly thought I needed to implement an interactive input box
 
 If there could be a comprehensive exercise that requires me to use lists, images, forms, and tables all on the same page, it would help me consolidate and integrate what I learned this week even more.
 
-### Accessibility
+## Accessibility
 
 ### 02-a11y
 
@@ -24,7 +24,7 @@ I found all the instructions in this section to be very clear and did not feel c
 
 If a copy of a real website's source code could be provided, requiring us to fix its accessibility issues, it would help us better understand the real user experience of different people.
 
-### CSS
+## CSS
 
 ### 03-css
 
